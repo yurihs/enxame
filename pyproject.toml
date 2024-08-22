@@ -1,0 +1,20 @@
+[project]
+name = "enxame"
+version = "0.1.0"
+description = "enxame"
+authors = [
+    {name = "yurihs", email = "yurisalvador@hotmail.com"},
+]
+dependencies = [
+    "fastapi[standard]>=0.112.1",
+    "asyncssh>=2.16.0",
+    "python-dotenv>=1.0.1",
+    "pydantic-settings>=2.4.0",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
