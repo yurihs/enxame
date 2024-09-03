@@ -28,8 +28,16 @@ You can set these variables in a `.env` file in the project root.
 
 After setting up the environment, you can run the app using Docker Compose.
 
-For detailed API documentation, refer to the `/docs` endpoint when the app is running.
-
 ```
 docker compose up -d
 ```
+
+## API
+
+For detailed API documentation, refer to the `/docs` endpoint when the app is running.
+
+- `POST /apps`: Create a new Dokku application
+- `GET /apps`: List all Dokku applications
+- `GET /apps/{name}`: Get details of a specific Dokku application
+- `DELETE /apps/{name}`: Delete a Dokku application
+- `PUT /apps/{name}/config`: Update the configuration of a Dokku application
